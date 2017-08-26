@@ -1,21 +1,21 @@
 // ==UserScript==
-// @name           Frozen Cookies
-// @version        github-latest
-// @description    Userscript to load Frozen Cookies written by Icehawk78, forked by Lordshinjo
-// @author         Lordshinjo
-// @homepage       https://github.com/Lordshinjo/FrozenCookies
-// @include        http://orteil.dashnet.org/cookieclicker/
-// @updateURL      https://rawgit.com/Lordshinjo/FrozenCookies/master/fc_userscript_loader.js
-// @downloadURL    https://rawgit.com/Lordshinjo/FrozenCookies/master/fc_userscript_loader.js
-// @run-at         document-start
+// @name Frozen Cookies
+// @version github-latest
+// @description Userscript to load Frozen Cookies written by Icehawk78
+// @author shinji257
+// @homepage https://github.com/VorpalCake/FrozenCookies
+// @include http://orteil.dashnet.org/cookieclicker/
+// @updateURL https://rawgit.com/VorpalCake/FrozenCookies/master/fc_userscript_loader.user.js
+// @downloadURL https://rawgit.com/VorpalCake/FrozenCookies/master/fc_userscript_loader.user.js
 // ==/UserScript==
 
-// Dev:       https://github.com/Lordshinjo/FrozenCookies/development/
-// Master:    https://github.com/Lordshinjo/FrozenCookies/master/
-// Github.io: http://lordshinjo.github.io/FrozenCookies/
-
 function LoadFrozenCookies() {
-    Game.LoadMod('https://rawgit.com/Lordshinjo/FrozenCookies/master/frozen_cookies.js');
+  var js = document.createElement('script');
+  js.setAttribute('type', 'text/javascript');
+  js.setAttribute('id', 'frozenCookieScript');
+  js.setAttribute('src', 'https://rawgit.com/VorpalCake/FrozenCookies/master/frozen_cookies.js');
+  document.head.appendChild(js);
 }
-
-window.addEventListener("load", LoadFrozenCookies, false);
+// It's not the best way but Chrome doesn't work with addEventListener... :(
+// Delay load by 2 seconds to allow the site to load itself first.)
+window.setTimeout(LoadFrozenCookies, 2000);
