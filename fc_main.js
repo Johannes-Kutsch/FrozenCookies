@@ -1722,9 +1722,14 @@ function autoGSBuy() {
 function autoGodzamokAction() {
     if (Game.hasGod('ruin') && Game.Objects['Cursor'].amount > 10 && hasClickBuff()) {
         Game.Objects['Cursor'].sell(Game.Objects['Cursor'].amount);
+        Game.Objects['Grandma'].sell(Game.Objects['Grandma'].amount);
         Game.Objects['Farm'].sell(Game.Objects['Farm'].amount);
-        Game.Objects['Wizard tower'].sell(Game.Objects['Wizard tower'].amount);
+        Game.Objects['Mine'].sell(Game.Objects['Mine'].amount);
+        Game.Objects['Factory'].sell(Game.Objects['Factory'].amount);
+        Game.Objects['Bank'].sell(Game.Objects['Bank'].amount);
         Game.Objects['Shipment'].sell(Game.Objects['Shipment'].amount);
+        Game.Objects['Alchemy lab'].sell(Game.Objects['Alchemy lab'].amount);
+        Game.Objects['Portal'].sell(Game.Objects['Portal'].amount);
     }
 }
 
