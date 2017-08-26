@@ -1731,7 +1731,6 @@ function autoGodzamokAction() {
         Game.Objects['Shipment'].sell(Game.Objects['Shipment'].amount);
         Game.Objects['Alchemy lab'].sell(Game.Objects['Alchemy lab'].amount);
         Game.Objects['Portal'].sell(Game.Objects['Portal'].amount);
-        Game.storeBulkButton(2);
     }
 }
 
