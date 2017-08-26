@@ -1722,6 +1722,9 @@ function autoGSBuy() {
 function autoGodzamokAction() {
     if (Game.hasGod('ruin') && Game.Objects['Cursor'].amount > 10 && hasClickBuff()) {
         Game.Objects['Cursor'].sell(Game.Objects['Cursor'].amount);
+        Game.Objects['Farm'].sell(Game.Objects['Farm'].amount);
+        Game.Objects['Wizard tower'].sell(Game.Objects['Wizard tower'].amount);
+        Game.Objects['Shipment'].sell(Game.Objects['Shipment'].amount);
     }
 }
 
