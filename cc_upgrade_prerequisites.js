@@ -90,7 +90,7 @@ FrozenCookies.preferenceValues = {
         'default':0
     },
     'autoGodzamok':{
-        'hint':'Automatically sell all cursors during Dragonflight and Click Frenzy if you worship Godzamok',
+        'hint':'Automatically sell all cursors, farms, wizard towers, and shipments during Dragonflight and Click Frenzy if you worship Godzamok',
         'display':['Auto-Godzamok OFF','Auto-Godzamok ON'],
         'default':0
     },
