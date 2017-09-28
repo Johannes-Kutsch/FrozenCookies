@@ -3,17 +3,17 @@
 // @version github-latest
 // @description Userscript to load Frozen Cookies written by Icehawk78
 // @author shinji257
-// @homepage https://github.com/VorpalCake/FrozenCookies
+// @homepage https://github.com/Johannes-Kutsch/FrozenCookies
 // @include http://orteil.dashnet.org/cookieclicker/
-// @updateURL https://rawgit.com/VorpalCake/FrozenCookies/master/fc_userscript_loader.user.js
-// @downloadURL https://rawgit.com/VorpalCake/FrozenCookies/master/fc_userscript_loader.user.js
+// @updateURL https://rawgit.com/Johannes-Kutsch/FrozenCookies/master/fc_userscript_loader.user.js
+// @downloadURL https://rawgit.com/Johannes-Kutsch/FrozenCookies/master/fc_userscript_loader.user.js
 // ==/UserScript==
 
 function LoadFrozenCookies() {
   var js = document.createElement('script');
   js.setAttribute('type', 'text/javascript');
   js.setAttribute('id', 'frozenCookieScript');
-  js.setAttribute('src', 'https://rawgit.com/VorpalCake/FrozenCookies/master/frozen_cookies.js');
+  js.setAttribute('src', 'https://rawgit.com/Johannes-Kutsch/FrozenCookies/master/frozen_cookies.js');
   document.head.appendChild(js);
 }
 // It's not the best way but Chrome doesn't work with addEventListener... :(
