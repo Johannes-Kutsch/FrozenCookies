@@ -1720,10 +1720,9 @@ function autoGSBuy() {
 }
 
 function autoGodzamokAction() {
-    if (Game.hasGod('ruin') && Game.Objects['Cursor'].amount > 10 && hasClickBuff()) {
-        Game.storeBulkButton(4);
+    if (Game.hasGod('ruin') && Game.Objects['Cursor'].amount > 1 && hasClickBuff()) {
         Game.Objects['Cursor'].sell(Game.Objects['Cursor'].amount);
-        Game.storeBulkButton(2);
+		Game.Objects['Cursor'].buy(300);
     }
 }
 
@@ -1748,6 +1747,7 @@ function reindeerLife() {
 function fcClickCookie() {
     if (!Game.OnAscend && !Game.AscendTimer && !Game.specialTabHovered) {
         Game.ClickCookie();
+		autoGodzamokAction();
     }
 }
 
