@@ -1721,7 +1721,6 @@ function autoGSBuy() {
 
 function autoGodzamokAction() {
     if (Game.hasGod('ruin') && Game.Objects['Cursor'].amount > 10 && hasClickBuff()) {
-		Game.Objects['Cursor'].buy(300);
         Game.Objects['Cursor'].sell(Game.Objects['Cursor'].amount);
     }
 }
@@ -1924,7 +1923,7 @@ function FCStart() {
 
     if (FrozenCookies.autoGodzamokBot) {
         clearInterval(FrozenCookies.autoGodzamokBot);
-		//Game.storeBulkButton(2);
+		Game.storeBulkButton(2);
         FrozenCookies.autoGodzamokBot = 0;
     }
 
@@ -1961,7 +1960,7 @@ function FCStart() {
     }
 
     if (FrozenCookies.autoGodzamok) {
-		//Game.storeBulkButton(4);
+		Game.storeBulkButton(4);
         FrozenCookies.autoGodzamokBot = setInterval(autoGodzamokAction, FrozenCookies.frequency)
     }
 
