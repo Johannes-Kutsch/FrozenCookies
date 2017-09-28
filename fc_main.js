@@ -1723,7 +1723,6 @@ function autoGodzamokAction() {
     if (Game.hasGod('ruin') && Game.Objects['Cursor'].amount > 10 && hasClickBuff()) {
         Game.storeBulkButton(4);
         Game.Objects['Cursor'].sell(Game.Objects['Cursor'].amount);
-        Game.storeBulkButton(2);
     }
 }
 
@@ -1925,6 +1924,7 @@ function FCStart() {
 
     if (FrozenCookies.autoGodzamokBot) {
         clearInterval(FrozenCookies.autoGodzamokBot);
+		Game.storeBulkButton(2);
         FrozenCookies.autoGodzamokBot = 0;
     }
 
