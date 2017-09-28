@@ -1747,7 +1747,7 @@ function reindeerLife() {
 function fcClickCookie() {
     if (!Game.OnAscend && !Game.AscendTimer && !Game.specialTabHovered) {
         Game.ClickCookie();
-		//autoGodzamokAction();
+		autoGodzamokAction();
     }
 }
 
