@@ -1721,6 +1721,7 @@ function autoGSBuy() {
 
 function autoGodzamokAction() {
     if (Game.hasGod('ruin') && Game.Objects['Cursor'].amount > 10 && hasClickBuff()) {
+        Game.storeBulkButton(4);
         Game.Objects['Cursor'].sell(Game.Objects['Cursor'].amount);
     }
 }
@@ -1960,7 +1961,6 @@ function FCStart() {
     }
 
     if (FrozenCookies.autoGodzamok) {
-		Game.storeBulkButton(4);
         FrozenCookies.autoGodzamokBot = setInterval(autoGodzamokAction, FrozenCookies.frequency)
     }
 
